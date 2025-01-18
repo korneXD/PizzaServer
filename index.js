@@ -6,7 +6,7 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-const PORT = process.env.DB_PORT || 3000;
+const PORT = process.env.DB_PORT;
 
 let connection;
 try {
