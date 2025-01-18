@@ -2,8 +2,9 @@ import { configDB } from "./configDB.js";
 import express from "express";
 import mysql from "mysql2/promise";
 import cors from "cors";
+import dotenv from "dotenv";
 
-const PORT = 3000;
+const PORT = 5000;
 
 let connection;
 try {
