@@ -4,7 +4,9 @@ import mysql from "mysql2/promise";
 import cors from "cors";
 import dotenv from "dotenv";
 
-const PORT = 5000;
+dotenv.config();
+
+const PORT = process.env.DB_PORT || 3000;
 
 let connection;
 try {
